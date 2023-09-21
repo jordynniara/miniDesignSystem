@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.col-yellow
+{
+    background-color: yellow;
+}
+
+.col-cornflower
+{
+    background-color: cornflowerblue;
+}
+
+.col-coral
+{
+    background-color: coral;
+}
+
+.col-pink
+{
+    background-color: pink;
+}
+
+html body
+{
+    font-family: 'Josefin Slab', serif;
+    background-color: rgba(183, 234, 216, .7);
+}
+
+.navbar
+{
+    background-color: beige;
+}
+
+.navbar-brand
+{
+    font-weight: 700;
+}
+
+.nav-link.active
+{
+    color: rgb(113, 38, 38) !important; 
+    font-weight: 700 !important;
+}
+
+.nav-link:hover
+{
+    font-weight: 700;
+}
+
+h1
+{
+    font-size: 1.802em;
+    font-weight: 700;
+}
+
+h2
+{
+    font-size: 1.602em;
+    font-weight: 700;
+}
+
+.footer
+{
+    text-align: center;
+}
