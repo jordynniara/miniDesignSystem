@@ -22,7 +22,7 @@
 
 html body
 {
-    font-family: 'Josefin Slab', serif;
+    font-family: 'EB Garamond', serif;
     background-color: rgba(183, 234, 216, .7);
 }
 
@@ -59,7 +59,37 @@ h2
     font-weight: 700;
 }
 
-.footer
+h3
 {
-    text-align: center;
+    font-size: 1.424em;
+    font-weight: 700;
+}
+
+.btn.btn-primary
+{
+    background-color: pink;
+    border-color: pink;
+}
+
+.btn.btn-primary:hover
+{
+    background-color: coral;
+    border-color: coral;
+}
+
+.carousel-row-px
+{
+    padding-left: 125px;
+    padding-right: 125px;
+}
+
+.carousel-img-height
+{
+    height: 300px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon
+{
+    background-color: grey!important;
 }
