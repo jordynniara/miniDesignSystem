@@ -1,0 +1,46 @@
+.navbar
+{
+    background-color: #46494c;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.nav-link
+{
+    color:#a1a7ae
+}
+
+.nav-link.active
+{
+    font-weight: 700;
+    color: #ffff !important;
+}
+
+html body
+{
+    background-color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.typescale-ref
+{
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+h1
+{
+    font-weight: 700;
+    font-size: 4rem;
+    color: #46494c;
+}
+
+h2
+{
+    font-size: 3rem;
+    color: #6f7276
+}
+
+html footer
+{
+    color: #46494c;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
