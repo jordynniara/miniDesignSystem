@@ -56,11 +56,15 @@ large, h5 {font-size: 1.2rem; font-weight: 400; line-height: 1.3;}
 
 small, .text_small {font-size: 0.833rem;}
 
-a:not(#nia-link),
+.logo-name{
+  font-family: "selfie-neue-round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* a:not(#nia-link.navbar-brand), */
 a:not(.nav-link.dropdown-toggle),
 a:not(.navbar-brand){
-  /* color: #6FA4DC;  */
-  /* background-color: #22211F; */
   padding: .05rem !important;
   margin: .05rem !important;
   border-radius: 3px;
@@ -68,7 +72,8 @@ a:not(.navbar-brand){
   display: inline;
 }
 
-.emphasized-text
+.emphasized-text,
+emph
 {
   color: #6FA4DC; 
   background-color: #22211F;
@@ -77,6 +82,16 @@ a:not(.navbar-brand){
   border-radius: 10px;
   display: inline;
 
+}
+.emphasized-text-dark,
+emph-dark
+{
+  border: 1px white solid;
+  border-radius: 3px;
+  padding: .05rem !important;
+  margin: .05rem !important;
+  display: inline;
+  color: #6FA4DC;
 }
 
 /* Accents */
@@ -322,12 +337,25 @@ button .bi-list{
   background-color: #6FA4DC;
 }
 
-.offcanvas .btn-toggle-nav a {
+.offcanvas .blue-hover .btn-toggle-nav a.active{
+  color: #6FA4DC !important;
+  text-decoration: underline !important;
+}
+.offcanvas .red-hover .btn-toggle-nav a.active{
+  color: #E87B6F !important;
+  text-decoration: underline !important;
+}
+.offcanvas .green-hover .btn-toggle-nav a.active{
+  color: #B2C480 !important;
+  text-decoration: underline !important;
+}
+
+/* .offcanvas .btn-toggle-nav a {
   padding: .1875rem .5rem;
   margin-top: .125rem;
   margin-left: 1.25rem;
-}
-.offcanvas .btn-toggle-nav.red-hover a:hover,
+} */
+/* .offcanvas .btn-toggle-nav.red-hover a:hover,
 .btn-toggle-nav.red-hover a:focus
 {
   background-color: #E87B6F;
@@ -341,7 +369,7 @@ button .bi-list{
 .offcanvas .btn-toggle-nav.blue-hover a:focus
 {
   background-color: #6FA4DC;
-}
+} */
 
 .offcanvas .btn-close{
   background-color: #ffffff;

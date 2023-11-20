@@ -21,60 +21,62 @@
   <body>
     <!--Vertical Navbar-->
     <nav id="trueNav">
-      <div class="container-fluid">
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <a href="../home.html" class="d-flex align-items-center text-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-              <img src="../assets/logos/reverse - color.png" style="width: 20rem;" alt="JNS Logo"></img>
-            </a>
-            <ul class="list-unstyled ps-0 red-hover">
-              <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
-                data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
-                Foundations
-                </button>
-                <div class="collapse" id="foundations-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="../foundation/type.html" class="d-inline-flex rounded ">Typography</a></li>
-                    <li><a href="../foundation/color.html" class="d-inline-flex rounded">Color Palette</a></li>
-                    <li><a href="../foundation/logo.html" class="d-inline-flex rounded">Logo Variations</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="mb-1 blue-hover">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed " 
-                data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
-                  Components
-                </button>
-                <div class="collapse" id="components-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="../components/buttons.html" class="d-inline-flex rounded">Buttons</a></li>
-                    <li><a href="../components/cards.html" class="d-inline-flex rounded">Cards</a></li>
-                    <li><a href="../components/navigation.html" class="d-inline-flex rounded">Navigation</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="mb-1 green-hover">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed " 
-                data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
-                  Page Patterns
-                </button>
-                <div class="collapse" id="patterns-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="../patterns/page1.html" class="d-inline-flex rounded">Homepage</a></li>
-                    <li><a href="../patterns/page2.html" class="d-inline-flex rounded">Other Page</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
+        <div class="container-fluid">
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header align-items-end">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <a href="home.html" class="d-flex flex-column text-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                <img src="../assets/logos/favicon.png" style="width: 20rem;" alt="JNS Logo"></img>
+                <h1 class="logo-name">
+                  <span class="strawberry">Jordyn</span><span class="sky">Niara</span><span class="inchworm">Smith</span>
+                </h1>
+              </a>
+              <ul class="list-unstyled ps-0 r">
+                <li class="mb-1 red-hover">
+                  <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+                  data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
+                  Foundations
+                  </button>
+                  <div class="collapse" id="foundations-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="../foundation/type.html" class="d-inline-flex rounded ">Typography</a></li>
+                      <li><a href="../foundation/color.html" class="d-inline-flex rounded">Color Palette</a></li>
+                      <li><a href="../foundation/logo.html" class="d-inline-flex rounded">Logo Variations</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1 blue-hover">
+                  <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed " 
+                  data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+                    Components
+                  </button>
+                  <div class="collapse" id="components-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="./buttons.html" class="d-inline-flex rounded">Buttons</a></li>
+                      <li><a href="./cards.html" class="d-inline-flex rounded">Cards</a></li>
+                      <li><a href="#" class="d-inline-flex rounded active">Navigation</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1 green-hover">
+                  <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed " 
+                  data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+                    Page Patterns
+                  </button>
+                  <div class="collapse" id="patterns-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="../patterns/page1.html" class="d-inline-flex rounded">Homepage</a></li>
+                      <li><a href="../patterns/page2.html" class="d-inline-flex rounded">Other Page</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     <!--Header-->
     <nav id="page-header" class="navbar bg-body-tertiary header d-flex p-1" style="background-color: #C4BAB9!important;">
       <a id="nia-link" class="navbar-brand" href="../home.html" style="text-decoration: none; display: inline;">
@@ -98,14 +100,14 @@
           </div>
         </div>
         <!--Main Content-->
-        <div class="row px-5 mx-5 mb-5"> <!--Vertical Nav Example-->
+        <div class="row px-5 mx-5 mb-5"> <!--Nav Example-->
             <div class="col-12">
                 <div class="d-flex flex-column dashed-border " style="height: 100%;">
                     <nav id="demoNavbar" class="navbar navbar-expand-lg bg-body-tertiary">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#">
                                 <img src="../assets/logos/favicon.png" style="width: 5rem;" alt="JNS logo image"></img>
-                                <h3 class="logo-name">
+                                <h3 class="logo-name" style="display: inline;">
                                     <span class="strawberry">Jordyn</span><span class="sky">Niara</span><span class="inchworm">Smith</span>
                                 </h3>
                             </a>
@@ -115,26 +117,26 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item red-hover">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item blue-hover">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown green-hover">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                                </li>
+                                    <li class="nav-item red-hover">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item blue-hover">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item dropdown green-hover">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

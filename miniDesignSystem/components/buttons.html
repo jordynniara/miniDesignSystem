@@ -14,22 +14,27 @@
     <!-- Custom styles for this template -->
     <link href="../css/global.css" rel="stylesheet">
     <link href="css/buttons.css" rel="stylesheet">
+    <!--Adobe font-->
+    <link rel="stylesheet" href="https://use.typekit.net/hyl0lwn.css">
   </head>
   <body>
     <!--Vertical Navbar-->
     <nav id="trueNav">
       <div class="container-fluid">
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <div class="offcanvas-header align-items-end">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <a href="../home.html" class="d-flex align-items-center text-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-              <img src="../assets/logos/reverse - color.png" style="width: 20rem;" alt="JNS Logo"></img>
+            <a href="home.html" class="d-flex flex-column text-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+              <img src="../assets/logos/favicon.png" style="width: 20rem;" alt="JNS Logo"></img>
+              <h1 class="logo-name">
+                <span class="strawberry">Jordyn</span><span class="sky">Niara</span><span class="inchworm">Smith</span>
+              </h1>
             </a>
-            <ul class="list-unstyled ps-0 red-hover">
-              <li class="mb-1">
+            
+            <ul class="list-unstyled ps-0 r">
+              <li class="mb-1 red-hover">
                 <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
                 data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
                 Foundations
@@ -51,9 +56,9 @@
                 </button>
                 <div class="collapse" id="components-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="../components/buttons.html" class="d-inline-flex rounded">Buttons</a></li>
-                    <li><a href="../components/cards.html" class="d-inline-flex rounded">Cards</a></li>
-                    <li><a href="../components/navigation.html" class="d-inline-flex rounded">Navigation</a></li>
+                    <li><a href="#" class="d-inline-flex active rounded">Buttons</a></li>
+                    <li><a href="./cards.html" class="d-inline-flex rounded">Cards</a></li>
+                    <li><a href="./navigation.html" class="d-inline-flex rounded">Navigation</a></li>
                   </ul>
                 </div>
               </li>
@@ -234,10 +239,10 @@
           </div>
         </div>
         <hr>
-        <!--Focused-->
+        <!--Focused/Hover-->
         <div class="row px-5 mx-5 mb-3" style="background-color: transparent;"> <!--Primary Header-->
           <div class="col-12pb-3 text-center">
-            <h3>Primary - Focused</h3>
+            <h3>Primary - Hover/Focused</h3>
           </div>
         </div>
         <div class="row ms-0 px-5 mx-5 mb-5"> <!--Primary buttons-->
@@ -303,7 +308,7 @@
         </div>
         <div class="row px-5 mx-5 mb-3" style="background-color: transparent;"> <!--Secondary Header-->
           <div class="col-12 pb-3 text-center">
-            <h3>Secondary - Focused</h3>
+            <h3>Secondary - Hover/Focused</h3>
           </div>
         </div>
         <div class="row ms-0 px-5 mx-5 mb-5"> <!--Secondary buttons-->

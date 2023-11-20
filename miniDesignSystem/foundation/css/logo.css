@@ -23,6 +23,11 @@
     border-right: 1px #FFFFFF solid;
 }
 
+.mid-mascot-border{
+    border-left: none;
+    border-right: none
+}
+
 @media (max-width: 768px) {
     .mid-mascot-border{
         border-left: 3px #22211F dashed;

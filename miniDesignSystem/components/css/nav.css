@@ -1,12 +1,13 @@
-.navbar
+#demoNavbar{
+&.navbar
 {
     background-color: #22211F !important;
 }
 
-#demoNavbar .navbar-toggler{
+.navbar-toggler{
     border: 3px white solid !important;
 }
-#demoNavbar .navbar-toggler>i{
+.navbar-toggler>i{
     color: white;
     font-size: 3rem;
     display: flex;
@@ -27,6 +28,8 @@
 .navbar-nav .nav-link,
 .dropdown-item{
     color: white;
+    padding: .5rem !important;
+    margin: 1rem !important;
     border: none !important;
 }
 .nav-link.disabled {
@@ -69,11 +72,4 @@
     text-decoration: underline;
 
 }
-
-.logo-name{
-    font-family: "selfie-neue-round", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    display:inline
 }
