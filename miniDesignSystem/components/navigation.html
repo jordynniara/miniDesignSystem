@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <title>Nia - Cards</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/gradient/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/gradient/favicon-32x32.png">
@@ -14,6 +15,8 @@
     <!-- Custom styles for this template -->
     <link href="../css/global.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
+    <!--Adobe font-->
+    <link rel="stylesheet" href="https://use.typekit.net/hyl0lwn.css">
   </head>
   <body>
     <!--Vertical Navbar-->
@@ -88,55 +91,61 @@
         <!--Sticker-->
         <div class="row drop-shadow sticker mb-5 p-5">
           <div class="col-12">
-            <h2>Navigation</h2> <!--Definition-->
+            <h2>Vertical Navigation</h2> <!--Definition-->
             <large>
-                A sidebar navigational component to maximize screen real-estate. 
+                An exapnded and responsive navigational component to maximize screen real-estate. 
             </large>
           </div>
         </div>
         <!--Main Content-->
-        <!-- <div class="row px-5 mx-5 mb-3" style="background-color: transparent;"> 
-            <div class="col-12 pb-3 text-center">
-              <h3>Navigation</h3>
-            </div>
-        </div> -->
-        <div class="row ms-0 px-5 mx-5 mb-5"> <!--Default Card Example-->
-            <div class="col-lg-5 col-md-12 ">
-                <div class="d-flex justify-content-start dashed-border " style="height: 100%;">
-                    <nav class="navbar-expanded">
-                        <div class="nav-header">
-                            <a href="#">
-                                <img class="logo" src="../assets/logos/reverse - color.png" alt="JNS Logo"></img>
+        <div class="row px-5 mx-5 mb-5"> <!--Vertical Nav Example-->
+            <div class="col-12">
+                <div class="d-flex flex-column dashed-border " style="height: 100%;">
+                    <nav id="demoNavbar" class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">
+                                <img src="../assets/logos/favicon.png" style="width: 5rem;" alt="JNS logo image"></img>
+                                <h3 class="logo-name">
+                                    <span class="strawberry">Jordyn</span><span class="sky">Niara</span><span class="inchworm">Smith</span>
+                                </h3>
                             </a>
-                        </div>
-                        <ul class="nav-list">
-                            <li class="mb-1 red-hover">
-                                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
-                                data-bs-toggle="collapse" data-bs-target="#demo-collapse" aria-expanded="false">
-                                    Expandable Item
-                                </button>
-                                <div class="collapse" id="demo-collapse">
-                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><a href="#" class="d-inline-flex rounded ">Item A</a></li>
-                                    <li><a href="#" class="d-inline-flex rounded">Item B</a></li>
-                                    <li><a href="#" class="d-inline-flex rounded">Item C</a></li>
+                            <div class="vrt-div"></div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="bi bi-list"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item red-hover">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item blue-hover">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown green-hover">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
-                                </div>
-                            </li>
-                            <li class="blue-hover"><a class="d-inline-flex rounded" href="#">Item 2</a></li>
-                            <li class="green-hover"><a class="d-inline-flex rounded" href="#">Item 3</a></li>
-                        </ul>
-                        <div class="nav-footer border-top" style="color:white;">
-                            Footer
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                </li>
+                                </ul>
+                            </div>
                         </div>
                     </nav>
-                    <div class="d-flex flex-column justify-content-center align-items-center inset-border w-100 p-3">
+                    <div class="d-flex flex-column justify-content-center align-items-center inset-border w-100 p-3" style="height: 10rem;">
                         Content
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-12"> <!--Accordion-->
-                <div class="accordion w-100" id="defaulCardAccordion">
+            <div class="d-flex flex-column justify-content-center align-items-center col-12"> <!--Accordion-->
+                <div class="accordion w-100 mt-2" id="defaulCardAccordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header"> <!--Usage-->
                         <button class="accordion-button strawberry" type="button" data-bs-toggle="collapse" data-bs-target="#defaultAccordionUsage" aria-expanded="true" aria-controls="collapseOne">
@@ -146,13 +155,14 @@
                         <div id="defaultAccordionUsage" class="accordion-collapse collapse show" data-bs-parent="#defaulCardAccordion">
                         <div class="accordion-body inset-border">
                             <p>
-                                Default responsive navigation bar. Can utilizes Bootstrap's <span class="code">Offcanvas</span> class to 
-                                toggle visibility. See <a href="https://getbootstrap.com/docs/5.3/components/offcanvas/#how-it-works">documentation</a> for details and
-                                this site's vertical navigation and menu toggle above for demonstration.
+                                Default responsive navigation bar. Typically place at top of screen. 
+                                Can use <span class="code">position: sticky</span> so it stays at top of screen while scrolling.
+                                Decrease screen size to see responsivity (menu toggle)
                             <br>
                             Code shown is for card on display. CSS can be modified as needed using classes 
-                            <span class="code">.navbar-expanded</span>, <span class="code">.nav-header</span>, <span class="code">.nav-list</span>,
-                            , and <span class="code">.nav-footer</span>.
+                            <span class="code">.navbar</span>, <span class="code">.navbar-brand</span>, <span class="code">.navbar-togger</span> (menu toggle button),
+                            , <span class="code">.navbar-nav</span> (item list), and <span class="code">.nav-item</span> (items).
+                            See <a href="https://getbootstrap.com/docs/5.3/components/navbar/">Bootstraps navbar documentation</a> for details. 
                             </p>
                         </div>
                         </div>
@@ -166,31 +176,42 @@
                         <div id="defaultAccordionCode" class="accordion-collapse collapse" data-bs-parent="#defaulCardAccordion">
                             <div class="accordion-body inset-border code">
                                 <small>
-                                    &lt;nav class="navbar-expanded"&gt;<br>
-                                    &emsp;&lt;div class="nav-header"&gt;<br>
-                                    &emsp;&emsp;&lt;a href="#"&gt;<br>
-                                    &emsp;&emsp;&emsp;&lt;img class="logo" src="../assets/logos/reverse - color.png" alt="JNS Logo"&gt;&lt;/img&gt;<br>
+                                    &lt;nav id=&quot;demoNavbar&quot; class=&quot;navbar navbar-expand-lg bg-body-tertiary&quot;&gt;<br>
+                                    &emsp;&lt;div class=&quot;container-fluid&quot;&gt;<br>
+                                    &emsp;&emsp;&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;<br>
+                                    &emsp;&emsp;&emsp;&lt;img src=&quot;../assets/logos/favicon.png&quot; style=&quot;width: 5rem;&quot; alt=&quot;JNS logo image&quot;&gt;&lt;/img&gt;<br>
+                                    &emsp;&emsp;&emsp; &lt;h3 class=&quot;logo-name&quot;&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp; &lt;span class=&quot;strawberry&quot;&gt;Jordyn&lt;/span&gt;&lt;span class=&quot;sky&quot;&gt;Niara&lt;/span&gt;&lt;span class=&quot;inchworm&quot;&gt;Smith&lt;/span&gt;<br>
+                                    &emsp;&emsp;&emsp;&lt;/h3&gt;<br>
                                     &emsp;&emsp;&lt;/a&gt;<br>
-                                    &emsp;&lt;/div&gt;<br>
-                                    &emsp;&lt;ul class="nav-list"&gt;<br>
-                                    &emsp;&emsp;&lt;li class="mb-1 red-hover"&gt;<br>
-                                    &emsp;&emsp;&lt;button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
-                                                data-bs-toggle="collapse" data-bs-target="#demo-collapse" aria-expanded="false"&gt;<br>
-                                                    Expandable Item<br>
-                                    &emsp;&emsp;&lt;/button&gt;<br>
-                                    &emsp;&emsp;&lt;div class="collapse" id="demo-collapse"&gt;<br>
-                                    &emsp;&emsp;&emsp;&lt;ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"&gt;<br>
-                                    &emsp;&emsp;&emsp;&emsp; &lt;li&gt;&lt;a href="#" class="d-inline-flex rounded"&gt;Item A&lt;/a&gt;&lt;/li&gt;<br>
-                                    &emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;a href="#" class="d-inline-flex rounded"&gt;Item B&lt;/a&gt;&lt;/li&gt;<br>
-                                    &emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;a href="#" class="d-inline-flex rounded"&gt;Item C&lt;/a&gt;&lt;/li&gt;<br>
+                                    &emsp;&emsp;&lt;div class=&quot;vrt-div&quot;&gt;&lt;/div&gt;<br>
+                                    &emsp;&emsp;&emsp;&lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarSupportedContent&quot; aria-controls=&quot;navbarSupportedContent&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&lt;i class=&quot;bi bi-list&quot;&gt;&lt;/i&gt;<br>
+                                    &emsp;&emsp;&emsp;&lt;/button&gt;<br>
+                                    &emsp;&emsp;&emsp;&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarSupportedContent&quot;&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&lt;ul class=&quot;navbar-nav me-auto mb-2 mb-lg-0&quot;&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&lt;li class=&quot;nav-item red-hover&quot;&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;a class=&quot;nav-link active&quot; aria-current=&quot;page&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/li&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&lt;li class=&quot;nav-item blue-hover&quot;&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/li&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&lt;li class=&quot;nav-item dropdown green-hover&quot;&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; role=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Dropdown<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/a&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;ul class=&quot;dropdown-menu&quot;&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/ul&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/li&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&lt;li class=&quot;nav-item&quot;&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;a class=&quot;nav-link disabled&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/li&gt;<br>
                                     &emsp;&emsp;&emsp;&emsp;&lt;/ul&gt;<br>
-                                    &emsp;&emsp;&emsp;&lt;/div&gt;<br>
-                                    &emsp;&emsp;&lt;/li&gt;<br>
-                                    &emsp;&emsp;&lt;li class="blue-hover"&gt;&lt;a class="d-inline-flex rounded" href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;<br>
-                                    &emsp;&emsp;&lt;li class="green-hover"&gt;&lt;a class="d-inline-flex rounded" href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;<br>
-                                    &emsp; &lt;/ul&gt;<br>
-                                    &emsp;&lt;div class="nav-footer border-top" style="color:white;"&gt;<br>
-                                        Footer <br>
+                                    &emsp;&emsp;&lt;/div&gt;<br>
                                     &emsp;&lt;/div&gt;<br>
                                     &lt;/nav&gt;
                                 </small>
@@ -216,7 +237,7 @@
                         </div>
                     </div>
                 </div>
-          </div>
+            </div>
         </div>
       </div>
     </div>
