@@ -1,0 +1,88 @@
+<div class="row px-5 mx-5 mb-3" style="background-color: transparent;"> <!--Default Card Header-->
+                <div class="col-12 pb-3 text-center">
+                    <h3>Navigation</h3>
+                </div>
+            </div>
+            <div class="row ms-0 px-5 mx-5 mb-5"> <!--Default Card Example-->
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="container inset-border dashed-border">
+                        <nav class="navbar-expanded bg-dark" style="width:30%; height: 100%; position: fixed;">
+                            <ul style="color: white;">
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 2</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-lg-6 col-md-12"> <!--Accordion-->
+                    <div class="accordion w-100" id="defaulCardAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"> <!--Usage-->
+                                <button class="accordion-button strawberry" type="button" data-bs-toggle="collapse" data-bs-target="#defaultAccordionUsage" aria-expanded="true" aria-controls="collapseOne">
+                                    Usage
+                                </button>
+                            </h2>
+                            <div id="defaultAccordionUsage" class="accordion-collapse collapse show" data-bs-parent="#defaulCardAccordion">
+                                <div class="accordion-body inset-border">
+                                    <p>
+                                    Primary card to be used to preview projects with a picture, title, and short description. 
+                                    Button can added to open a larger description in a modal or similar pop-up, or can be swapped with a link to navigate to an
+                                    an internal or external site such as GitHub.
+                                    <br>
+                                    Code shown is for card on display. CSS can be modified as needed using classes 
+                                    <span class="code">.card</span>, <span class="code">.card-body</span>, <span class="code">.card-header</span>,
+                                    <span class="code">.card-text</span>, and <span class="code">.card-footer</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item"> <!--Code-->
+                            <h2 class="accordion-header">
+                                <button class="accordion-button sky collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#defaultAccordionCode" aria-expanded="false" aria-controls="collapseTwo">
+                                    Code
+                                </button>
+                            </h2>
+                            <div id="defaultAccordionCode" class="accordion-collapse collapse" data-bs-parent="#defaulCardAccordion">
+                                <div class="accordion-body inset-border code">
+                                    <small>
+                                    &lt;div class="card"&gt;<br>
+                                    &emsp;&lt;img src="../assets/images/dragon.jpg" class="card-img-top" alt="..."&gt;<br>
+                                    &emsp;&lt;div class="card-body"&gt;<br>
+                                    &emsp;&emsp;&lt;div class="card-header"&gt;<br>
+                                    &emsp;&emsp;&emsp;&lt;h4 class="m-0"&gt;Title&lt;/h4&gt;<br>
+                                    &emsp;&emsp;&lt;/div&gt;<br>
+                                    &emsp;&emsp;&lt;p class="card-text"&gt;<br>
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.<br> 
+                                    &emsp;&emsp;&lt;/p&gt;<br>
+                                    &emsp;&emsp;&lt;div class="card-footer "&gt;<br>
+                                    &emsp;&emsp;&emsp;&lt;button type="button" class="btn primary-sky"&gt;Button&lt/button&gt;<br>
+                                    &emsp;&emsp;&lt;/div&gt;
+                                    &emsp;&lt;/div&gt;<br>
+                                    &lt;/div&gt;
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"> <!--Accessibility-->
+                                <button class="accordion-button inchworm collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#defaultAccordionA11y" aria-expanded="false" aria-controls="collapseThree">
+                                    Accessibility Considerations
+                                </button>
+                            </h2>
+                            <div id="defaultAccordionA11y" class="accordion-collapse collapse" data-bs-parent="#defaulCardAccordion">
+                                <div class="accordion-body">
+                                    <p style="display:inline">
+                                    Coloring for the cards are chosen to fit the theme of the system while also maintaining WCAG color contrast standards.
+                                    Links and Buttons should be used distinctly from each as defined in <a href="./buttons.html">Buttons</a>. Cards should have text, be focusable, and have the appropriate aria labelling for keyboard navigation and screen readers. 
+                                    See <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" target="_blank">Mozilla Web Documents</a>
+                                    for more accessibility guidelines.
+                                    </p>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>

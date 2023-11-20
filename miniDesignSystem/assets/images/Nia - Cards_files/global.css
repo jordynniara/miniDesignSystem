@@ -190,8 +190,7 @@ button .bi-list{
 
 .btn{
   border-radius: 25px;
-  min-width: 44px;
-  min-height: 44px;
+
 }
 .btn .inactive{
   background: #C4BAB9;
@@ -332,20 +331,4 @@ button .bi-list{
 
 .offcanvas {
   background-color: #22211F;
-}
-
-/*Accordion*/
-.accordion-button,
-.accordion-button:not(.collapsed),
-.accordion-button:not(.collapsed)::after{
-  color: #22211F;
-}
-.accordion-button.strawberry{
-  background-color: #E87B6F;
-}
-.accordion-button.sky{
-  background-color: #6FA4DC;
-}
-.accordion-button.inchworm{
-  background-color: #B2C480;
 }
