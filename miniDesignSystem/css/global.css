@@ -71,6 +71,14 @@ a:not(.navbar-brand){
   border: 2px dashed #22211F;
   display: inline;
 }
+a.dark:not(.nav-link.dropdown-toggle),
+a.dark:not(.navbar-brand){
+  padding: .05rem !important;
+  margin: .05rem !important;
+  border-radius: 3px;
+  border: 2px dashed white;
+  display: inline;
+}
 
 .emphasized-text,
 emph
