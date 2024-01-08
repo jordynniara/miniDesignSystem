@@ -1,0 +1,82 @@
+.navbar
+{
+    background-color: #46494c;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.nav-link
+{
+    color:#a1a7ae
+}
+
+.nav-link.home
+{
+    font-weight: 700;
+}
+
+.nav-link.active
+{
+    font-weight: 700;
+    color: #ffff !important;
+}
+
+html body
+{
+    background-color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.typescale-ref
+{
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+h1
+{
+    font-weight: 700;
+    font-size: 4rem;
+    color: black;
+    /* color: #46494c; */
+}
+
+h2
+{
+    font-size: 3rem;
+    color: #46494c;
+    /* color: #6f7276 */
+}
+
+h3
+{
+    font-size: 2rem;
+    color: #6f7276;
+}
+
+html footer
+{
+    color: #46494c;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.title, .context
+{
+  color: black;
+}
+
+.context
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-specs
+{
+  border-left: 2px solid #a1a7ae;
+  height: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.font-specs p
+{
+    margin: 0;
+}
